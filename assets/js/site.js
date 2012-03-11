@@ -80,7 +80,7 @@ longneck.twitterFollowers = function() {
     var tweets = $('.twitter-followers');
 
     $.ajax({
-        url: 'https://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=btvwag',
+        url: 'https://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=middwag',
         dataType: 'jsonp',
         success: function(resp) {
           renderFollowers(resp["ids"]);
