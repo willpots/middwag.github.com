@@ -1,0 +1,27 @@
+---
+layout: default
+title: BTVWAG -Burlington Web Application Group
+meta-description: "A place for technology enthusiasts focused on web development come together to share ideas."
+meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont, Application Developer, HTML, CSS"
+---
+
+<div class='row-fluid'>
+  <div class="span8">
+    <div class="well">
+      <h2>Jobs</h2>
+      {% for item in site.categories.jobs %}
+        {% include job.html %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="span3">
+    <div class="well">
+      <h2>About BTVWAG</h2>
+      <p class="description">
+        {{page.meta-description}}
+        We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+      </p>
+      <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large">Add a job</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+pygments: true
+auto: true
+permalink: none
+hashtag: '#MiddWAG'
+twitter_search: 'MiddWAG'
+github_login: 'MiddWAG'
+github_repo: 'middwag.github.com'
+github_language: ['Javascript', 'Ruby', 'PHP', 'Python']
+email: info@agilionapps.com
