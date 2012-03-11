@@ -46,14 +46,8 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
   </div>
 
   <div class="span3">
-    <div class="well">
-      <h2>About BTVWAG</h2>
-      <p class="description">
-        {{page.meta-description}}
-        We a. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
-      </p>
-      <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary btn-large">Upcoming Events &raquo;</a>
-    </div>
+    
+    {% include about.html %}
 
     <div class="well">
       <h2>Get updates</h2>

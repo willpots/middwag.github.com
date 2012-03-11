@@ -15,11 +15,13 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
     </div>
   </div>
   <div class="span3">
+    
+    {% include about.html %}
+
     <div class="well">
-      <h2>About BTVWAG</h2>
+      <h2>Submit a Job</h2>
       <p class="description">
-        {{page.meta-description}}
-        We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+        Have a job to do? Do you need a website developed or an application coded?
       </p>
       <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large">Add a job</a>
     </div>

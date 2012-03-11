@@ -1,0 +1,8 @@
+<div class="well">
+  <h2>About MiddWAG</h2>
+  <p class="description">
+    {{page.meta-description}}
+    See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+  </p>
+  <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary btn-large">Upcoming Events &raquo;</a>
+</div>
